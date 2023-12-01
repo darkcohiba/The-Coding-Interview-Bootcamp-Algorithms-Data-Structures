@@ -22,8 +22,8 @@ def isValid(s):
                 if stack.pop() != bracket_map[char]:
                     print('stack.pop does not equal bracketmap')
                     return False
-    # lastly return our stack in not
+    # if we get here then we we have sucessfully removed everything from our stack we will return the empty stack, which would be false but it will return as true since we have sucessfully removed all the matches
     return not stack
 
 
-print(isValid("()"))     
+print(isValid("((())))"))     
