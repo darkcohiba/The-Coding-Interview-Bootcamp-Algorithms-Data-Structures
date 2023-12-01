@@ -2,7 +2,7 @@
 
 def palTest(num):
     revNum = str(num)[::-1]
-    return int(revNum) == num
+    return False if "-" in revNum else int(revNum) == num
 
 print(palTest(21))
 
