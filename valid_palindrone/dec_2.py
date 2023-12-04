@@ -1,8 +1,9 @@
 def isPalindrome(s: str) -> bool:
     lower_string = s.lower()
-    print(lower_string.isalpha())
-    print(lower_string)
-
+    for index, char in enumerate(lower_string):
+        if char != lower_string[-index -1]:
+            return False
+    return True
 # steps
 # Normalize the String:
 
@@ -19,3 +20,6 @@ def isPalindrome(s: str) -> bool:
 
 
 print(isPalindrome("a man I nam a"))
+print(isPalindrome("ili"))
+print(isPalindrome("a man I nam"))
+print(isPalindrome("a man 'I' nam a"))
