@@ -1,5 +1,7 @@
 def isPalindrome(s: str) -> bool:
-    return (s)
+    lower_string = s.lower()
+    print(lower_string.isalpha())
+    print(lower_string)
 
 # steps
 # Normalize the String:
@@ -16,4 +18,4 @@ def isPalindrome(s: str) -> bool:
 # Your function should return true if the string is a palindrome, and false otherwise.
 
 
-print(isPalindrome("a man i nam a"))
+print(isPalindrome("a man I nam a"))
